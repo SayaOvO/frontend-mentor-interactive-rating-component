@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <!-- Rating state start -->
+
+    <main class="feedback" data-user-submitted="false">
+      <div class="feedback-rating">
+        <div class="circle-container">
+          <img src="images/icon-star.svg" alt="star icon" aria-hidden="true" />
+        </div>
+        <h1>How did we do?</h1>
+        <p class="feedback-description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form>
+          <ol class="ratings">
+            <li>
+              <button
+                class="rating-btn circle-container"
+                aria-selected="false"
+                data-rating-value="1"
+                type="button"
+              >
+                1
+              </button>
+            </li>
+            <li>
+              <button
+                class="rating-btn circle-container"
+                aria-selected="false"
+                data-rating-value="2"
+                type="button"
+              >
+                2
+              </button>
+            </li>
+            <li>
+              <button
+                class="rating-btn circle-container"
+                aria-selected="false"
+                data-rating-value="3"
+                type="button"
+              >
+                3
+              </button>
+            </li>
+            <li>
+              <button
+                class="rating-btn circle-container"
+                aria-selected="false"
+                data-rating-value="4"
+                type="button"
+              >
+                4
+              </button>
+            </li>
+            <li>
+              <button
+                class="rating-btn circle-container"
+                aria-selected="false"
+                data-rating-value="5"
+                type="button"
+              >
+                5
+              </button>
+            </li>
+          </ol>
+          <button class="submit-btn" disabled type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="feedback-result">
+        <img src="images/illustration-thank-you.svg" alt="thank you image" />
+        <p class="rating-result">
+          You selected <span class="rating-value"></span> out of 5
+        </p>
+        <h1>Thank you!</h1>
+        <p class="thank-you-message">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
